@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:darksalmon;
+            margin: 5px;
+            border:100px;
+        }
+        form{
+            text-align: center;
+            margin:50px 250px 50px 250px;
+            padding: 40px 25px 40px 25px;
+            border: 2px solid wheat;
+            color: beige;
+        }
+        button{
+            color: black;
+            background-color: wheat;
+            padding: 7px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        input{
+            border-color:khaki;
+        }
+        label{
+            color: wheat;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return inputform()" style="background-color: brown;">
+        <label for="name" style="text-align: center;">ENTER YOUR NAME</label><br><br>
+        <input type="text" id="name" required><br><br>
+        <label for="password" style="text-align: center;">PASSWORD</label><br><br>
+        <input type="password" id="password" required><br><br>
+        <button style="text-align: center;">SUBMIT</button>
+    </form>
+    <script>
+        function inputform(){
+           let name=document.getElementById("name").value
+           let password=document.getElementById("password").value
+           alert(" HELLO: "  +name+ "  PASSWORD: "  +password+ "  ");
+        }
+    </script>
+    
+   
+    
+</body>
+</html>
+
